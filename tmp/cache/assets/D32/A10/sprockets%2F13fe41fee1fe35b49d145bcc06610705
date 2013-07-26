@@ -1,4 +1,17 @@
-html, body {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1374874532.6021118:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%3177d8f9c6af14d1236a2087d79c8184I"logical_path;
+FI"application.css;
+TI"pathname;
+FI"1$root/app/assets/stylesheets/application.css;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2013-07-26T17:28:54-04:00;
+FI"	body;
+FI"Xhtml, body {
   margin: 0;
   padding: 0;
   background: White;
@@ -62,3 +75,16 @@ form label {
 table#movies th.hilite {
   background-color: yellow;
 }
+;
+FI"asset_paths;
+F[I"1$root/app/assets/stylesheets/application.css;
+TI"dependency_paths;
+F[{I"	path;
+FI"1$root/app/assets/stylesheets/application.css;
+TI"
+mtime;
+FIu:	TimeU[€ñ‘gs
+:@_zoneI"EDT;
+T:nano_numi:nano_deni:submicro"':offsetiþÀÇI"hexdigest;
+F"%46d17f96ad6b57717c9e5a702cde3e58I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
