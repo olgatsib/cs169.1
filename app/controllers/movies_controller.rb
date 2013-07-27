@@ -15,43 +15,47 @@ class MoviesController < ApplicationController
     @all_ratings = Movie.ratings
 
     if @ratings.nil?
-      @ratings = session[:ratings]
-      session.delete(:ratings)
-      if @ratings.nil?
-        @ratings_show = @all_ratings
+      if session[:ratings]
+        @ratings = session[:ratings]
+        session.delete(:ratings)
+        @ratings_show = @ratings
+        if session[:sort]
+          @sort = session[:sort]
+          session.delete(:sort)
+          redirect_to(:action => 'index', :ratings => @ratings, :sort => @sort)
+        else
+          redirect_to(:action => 'index', :ratings => @ratings)
+        end
       else
-        @ratings_show = @ratings   
-      end     
+        @ratings_show = @all_ratings 
+      end
     else
       session[:ratings] = @ratings
-      logger.debug("Session new: #{session[:ratings].inspect}")
       @ratings_show = @ratings
     end
-
+    
     if @sort.nil?
-      @sort = session[:sort]
-      session.delete(:sort)
-     
+      if session[:sort]
+        @sort = session[:sort]
+        session.delete(:sort)
+        if session[:rating]
+          @ratings = session[:ratings]
+          session.delete(:ratings)
+          @ratings_show = @ratings
+          redirect_to(:action => 'index', :ratings => @ratings, :sort => @sort)
+        else
+          redirect_to(:action => 'index', :sort => @sort)
+        end
+      end
     else
       session[:sort] = @sort
     end
+  
+
     logger.debug("Session new sort: #{session[:sort].inspect}")
    
     if @ratings.nil? && @sort.nil?
       logger.debug("All nil, rating: #{@ratings.inspect}")
-=begin  
-       if session[:ratings]
-        @ratings_show = session[:ratings]
-        session.delete(:rating)
-      else
-        @ratings_show = @all_ratings
-      end
-      if session[:sort]
-        @sort = session[:sort]
-        session.delete(:sort)
-      end
-     redirect_to(:action => 'index', :sort => @sort, :ratings => @ratings_show)
-=end
       @movies = Movie.all
     
     elsif @ratings.nil? && !@sort.nil?
