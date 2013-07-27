@@ -1,56 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1374872959.041404:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%273407b61d59c97a393df07560f71129I"logical_path;
-FI"application.js;
-TI"pathname;
-FI"0$root/app/assets/javascripts/application.js;
-TI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2013-07-26T16:53:34-04:00;
-FI"	body;
-FI"î// This is a manifest file that'll be compiled into including all the files listed below.
-// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
-// be included in the compiled file accessible from http://example.com/assets/application.js
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-;
-;
-FI"asset_paths;
-F[I"e/home/lol/.rvm/gems/ruby-1.9.3-p448/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;
-TI"i/home/lol/.rvm/gems/ruby-1.9.3-p448/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;
-TI"0$root/app/assets/javascripts/application.js;
-TI"dependency_paths;
-F[	{I"	path;
-FI"0$root/app/assets/javascripts/application.js;
-TI"
-mtime;
-FIu:	TimeT[ÄÙjÈ–
-:@_zoneI"EDT;
-T:nano_numiá:nano_deni:submicro"dp:offseti˛¿«I"hexdigest;
-F"%549ddbd6cc7eb5cac3ef01164f35f695{I"	path;
-FI"!$root/app/assets/javascripts;
-TI"
-mtime;
-FIu;T[ÄÙjÈ–
-;I"EDT;
-T;iá;i;"dp;i˛¿«I"hexdigest;
-F"%d4f88971c1988e00732efc3b47e84f9d{I"	path;
-FI"e/home/lol/.rvm/gems/ruby-1.9.3-p448/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;
-TI"
-mtime;
-FIu;T[ÄÄÑ%÷
-;I"EDT;
-T;i^;i;"ê;i˛¿«I"hexdigest;
-F"%683679b346b30943f8589b640966202a{I"	path;
-FI"i/home/lol/.rvm/gems/ruby-1.9.3-p448/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;
-TI"
-mtime;
-FIu;T[Ä¿£%÷
-;I"EDT;
-T;iÜ;i;"@;i˛¿«I"hexdigest;
-F"%2caafa0c2617f9985c1a0b07ebaefadfI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
